@@ -6,8 +6,69 @@
   <title>(Whether)Weather</title>
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    });
+  </script>
+
 </head>
 <body>
-    <p>Getting started</p>
+  <nav class="navbar is-large">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img class="image is-128x128" src="/images/logo.png" alt="Logo" />
+      </a>
+    
+      <span class="navbar-burger" data-target="navbarMenu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </span>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end is-flex-grow-1 is-justify-content-center">
+        <a class="navbar-item has-text-warning has-text-weight-bold">
+          Home
+        </a>
+        <a class="navbar-item has-text-warning has-text-weight-bold">
+          Dashboard
+        </a>
+        <a class="navbar-item has-text-warning has-text-weight-bold">
+          Settings
+        </a>
+        <a class="navbar-item has-text-warning has-text-weight-bold">
+          More+
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <img class="image is-16x16 is-inline" src="/images/logo.png" alt="(Whether)Weather"> (Whether)Weather Your.Forecast
+        </p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
