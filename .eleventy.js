@@ -3,10 +3,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("images");
 
-  // return {
-  //   dir: {
-  //     input: ".",
-  //     output: "_site"
-  //   }
-  // };
+  return {
+    dir: {
+      input: ".",
+      output: "_site"
+    }
+  };
 };

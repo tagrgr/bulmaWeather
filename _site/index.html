@@ -30,41 +30,99 @@
 </head>
 <body>
   <nav class="navbar is-large">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="#">
-        <img class="image is-128x128" src="/images/logo.png" alt="Logo" />
-      </a>
+    <div class="container is-three-quarters">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img class="navbar-logo" src="/images/logo.png" alt="Logo" />
+        </a>
+      
+        <span class="navbar-burger" data-target="navbarMenu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </span>
+      </div>
     
-      <span class="navbar-burger" data-target="navbarMenu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </span>
-    </div>
-
-    <div id="navbarMenu" class="navbar-menu">
-      <div class="navbar-end is-flex-grow-1 is-justify-content-center">
-        <a class="navbar-item has-text-warning has-text-weight-bold">
-          Home
-        </a>
-        <a class="navbar-item has-text-warning has-text-weight-bold">
-          Dashboard
-        </a>
-        <a class="navbar-item has-text-warning has-text-weight-bold">
-          Settings
-        </a>
-        <a class="navbar-item has-text-warning has-text-weight-bold">
-          More+
-        </a>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item has-text-warning has-text-weight-bold">Home</a>
+          <a class="navbar-item has-text-warning has-text-weight-bold">Dashboard</a>
+          <a class="navbar-item has-text-warning has-text-weight-bold">Settings</a>
+          <a class="navbar-item has-text-warning has-text-weight-bold">More+</a>
+        </div>
       </div>
     </div>
   </nav>
+
+  <header class="has-text-centered mb-5">
+    <h1 class="title is-2 mb-1">Dublin/IE</h1>
+    <p class="subtitle is-6">Today</p>
+  </header>
+
+  <main class="section">
+    <div class="container is-three-quarters">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <section class="table-container">
+            <table class="table is-fullwidth">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="has-text-centered">Right Now</th>
+                  <th class="has-text-centered">Max</th>
+                  <th class="has-text-centered">Min</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="has-background-info has-text-white">Weather</th>
+                  <td class="has-text-centered">
+                    <figure class="image is-32x32 is-inline-block">
+                      <img src="/images/partly-clouded.png" alt="Sunny">
+                    </figure>
+                  </td>
+                  <td class="has-text-centered">
+                    <figure class="image is-32x32 is-inline-block">
+                      <img src="/images/sunny.png" alt="Sunny">
+                    </figure>
+                  </td>
+                  <td class="has-text-centered">
+                    <figure class="image is-32x32 is-inline-block">
+                      <img src="/images/windy.png" alt="Sunny">
+                    </figure>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="has-background-info has-text-white">Chance of Precipitation</th>
+                  <td class="has-text-centered">20%</td>
+                  <td class="has-text-centered">30%</td>
+                  <td class="has-text-centered">5%</td>
+                </tr>
+                <tr>
+                  <th class="has-background-info has-text-white">Wind</th>
+                  <td class="has-text-centered">12 km/h</td>
+                  <td class="has-text-centered">15 km/h</td>
+                  <td class="has-text-centered">5 km/h</td>
+                </tr>
+                <tr>
+                  <th class="has-background-info has-text-white">Temp</th>
+                  <td class="has-text-centered has-background-warning">12°C</td>
+                  <td class="has-text-centered has-background-warning">15°C</td>
+                  <td class="has-text-centered has-background-warning">5°C</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
         <p>
-          <img class="image is-16x16 is-inline" src="/images/logo.png" alt="(Whether)Weather"> (Whether)Weather Your.Forecast
+          <img class="image is-64x64 is-inline" src="/images/logo-footer.png" alt="(Whether)Weather"> Whether Weather Your.Forecast
         </p>
       </div>
     </div>
