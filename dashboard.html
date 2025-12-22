@@ -1,118 +1,177 @@
-<main class="section">
-  <div class="container is-three-quarters">
-    <header class="has-text-centered mb-6">
-      <h1 class="title is-1 mb-2">Dashboard</h1>
-      <p class="subtitle is-4">Today</p>
-    </header>
+<!DOCTYPE html>
+<html class="has-background-light" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whether Weather</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
 
-    <div class="columns is-multiline is-centered">
-      <!-- Berlin -->
-      <div class="column is-4">
-        <a href="/berlin.html" class="card has-background-black has-text-white">
-          <div class="card-content has-text-centered">
-            <p class="has-text-weight-bold is-size-4 mb-2">Berlin</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
 
-            <figure class="image is-96x96 mx-auto mb-3">
-              <img src="/images/sunny.png" alt="Sunny">
-            </figure>
+        });
+      });
+    });
+  </script>
+</head>
 
-            <div class="is-flex is-justify-content-space-between">
-              <span class="has-text-weight-bold is-size-4">12°C</span>
-              <span class="has-text-weight-bold is-size-4">13°C</span>
-            </div>
-          </div>
+<body>
+  <nav class="navbar is-large">
+    <div class="container is-three-quarters">
+      
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img class="navbar-logo" src="/images/logo.png" alt="Logo" />
         </a>
+      
+        <span class="navbar-burger" data-target="navbarMenu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </span>
+      </div>
+    
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item has-text-warning has-text-weight-bold">Home</a>
+          <a class="navbar-item has-text-warning has-text-weight-bold">Dashboard</a>
+          <a class="navbar-item has-text-warning has-text-weight-bold">Settings</a>
+          <a class="navbar-item has-text-warning has-text-weight-bold">More+</a>
+        </div>
       </div>
 
-      <!-- London -->
-      <div class="column is-4">
-        <a href="/london.html" class="card has-background-black has-text-white">
-          <div class="card-content has-text-centered">
-            <p class="has-text-weight-bold is-size-4 mb-2">London</p>
-
-            <figure class="image is-96x96 mx-auto mb-3">
-              <img src="/images/sunny.png" alt="Sunny">
-            </figure>
-
-            <div class="is-flex is-justify-content-space-between">
-              <span class="has-text-weight-bold is-size-4">12°C</span>
-              <span class="has-text-weight-bold is-size-4">13°C</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Paris -->
-      <div class="column is-4">
-        <a href="/paris.html" class="card has-background-black has-text-white">
-          <div class="card-content has-text-centered">
-            <p class="has-text-weight-bold is-size-4 mb-2">Paris</p>
-
-            <figure class="image is-96x96 mx-auto mb-3">
-              <img src="/images/sunny.png" alt="Sunny">
-            </figure>
-
-            <div class="is-flex is-justify-content-space-between">
-              <span class="has-text-weight-bold is-size-4">12°C</span>
-              <span class="has-text-weight-bold is-size-4">13°C</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Tromsø -->
-      <div class="column is-4">
-        <a href="/tromso.html" class="card has-background-black has-text-white">
-          <div class="card-content has-text-centered">
-            <p class="has-text-weight-bold is-size-4 mb-2">Tromsø</p>
-
-            <figure class="image is-96x96 mx-auto mb-3">
-              <img src="/images/sunny.png" alt="Sunny">
-            </figure>
-
-            <div class="is-flex is-justify-content-space-between">
-              <span class="has-text-weight-bold is-size-4">12°C</span>
-              <span class="has-text-weight-bold is-size-4">13°C</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Vilnius -->
-      <div class="column is-4">
-        <a href="/vilnius.html" class="card has-background-black has-text-white">
-          <div class="card-content has-text-centered">
-            <p class="has-text-weight-bold is-size-4 mb-2">Vilnius</p>
-
-            <figure class="image is-96x96 mx-auto mb-3">
-              <img src="/images/sunny.png" alt="Sunny">
-            </figure>
-
-            <div class="is-flex is-justify-content-space-between">
-              <span class="has-text-weight-bold is-size-4">12°C</span>
-              <span class="has-text-weight-bold is-size-4">13°C</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Zagreb -->
-      <div class="column is-4">
-        <a href="/zagreb.html" class="card has-background-black has-text-white">
-          <div class="card-content has-text-centered">
-            <p class="has-text-weight-bold is-size-4 mb-2">Zagreb</p>
-
-            <figure class="image is-96x96 mx-auto mb-3">
-              <img src="/images/sunny.png" alt="Sunny">
-            </figure>
-
-            <div class="is-flex is-justify-content-space-between">
-              <span class="has-text-weight-bold is-size-4">12°C</span>
-              <span class="has-text-weight-bold is-size-4">13°C</span>
-            </div>
-          </div>
-        </a>
-      </div>
     </div>
-  </div>
-</main>
+  </nav>
+
+  <header class="has-text-centered mb-5">
+    <h1 class="title is-2 mb-1">Dashboard</h1>
+    <p class="subtitle is-6">Today</p>
+  </header>
+
+  <main class="section">
+    <div class="container is-three-quarters">
+      <section class="mt-6">
+        <div class="columns is-mobile is-multiline is-centered">
+          
+          <!-- card 1 (Dublin) -->
+          <div class="column is-one-third">
+            <section class="card has-background-info has-text-white">
+              <article class="card-content has-text-centered p-3">
+                <a href="/index.html">
+                  <p class="has-text-weight-bold">Dublin</p>
+                  <figure class="image is-48x48 mx-auto my-2">
+                    <img src="/images/partly-clouded.png" alt="Windy">
+                  </figure>
+                  <p class="has-text-weight-bold">5°C&nbsp;&nbsp;&nbsp;15°C</p>
+                </a>
+              </article>
+            </section>
+          </div>
+
+          <!-- card 2 (Cork) -->
+          <div class="column is-one-third">
+            <section class="card has-background-info has-text-white">
+              <article class="card-content has-text-centered p-3">
+                <a href="/cork.html">
+                  <p class="has-text-weight-bold">Cork</p>
+                  <figure class="image is-48x48 mx-auto my-2">
+                    <img src="/images/partly-clouded.png" alt="Windy">
+                  </figure>
+                  <p class="has-text-weight-bold">5°C&nbsp;&nbsp;&nbsp;15°C</p>
+                </a>
+              </article>
+            </section>
+          </div>
+
+          <!-- card 3 (Galway) -->
+          <div class="column is-one-third">
+            <section class="card has-background-info has-text-white">
+              <article class="card-content has-text-centered p-3">
+                <a href="/galway.html">
+                  <p class="has-text-weight-bold">Galway</p>
+                  <figure class="image is-48x48 mx-auto my-2">
+                    <img src="/images/partly-clouded.png" alt="Windy">
+                  </figure>
+                  <p class="has-text-weight-bold">5°C&nbsp;&nbsp;&nbsp;15°C</p>
+                </a>
+              </article>
+            </section>
+          </div>
+
+          <!-- card 4 (Donegal) -->
+          <div class="column is-one-third">
+            <section class="card has-background-info has-text-white">
+              <article class="card-content has-text-centered p-3">
+                <a href="/donegal.html">
+                  <p class="has-text-weight-bold">Donegal</p>
+                  <figure class="image is-48x48 mx-auto my-2">
+                    <img src="/images/partly-clouded.png" alt="Windy">
+                  </figure>
+                  <p class="has-text-weight-bold">5°C&nbsp;&nbsp;&nbsp;15°C</p>
+                </a>
+              </article>
+            </section>
+          </div>
+
+          <!-- card 5 (Waterford) -->
+          <div class="column is-one-third">
+            <section class="card has-background-info has-text-white">
+              <article class="card-content has-text-centered p-3">
+                <a href="/waterford.html">
+                  <p class="has-text-weight-bold">Waterford</p>
+                  <figure class="image is-48x48 mx-auto my-2">
+                    <img src="/images/partly-clouded.png" alt="Windy">
+                  </figure>
+                  <p class="has-text-weight-bold">5°C&nbsp;&nbsp;&nbsp;15°C</p>
+                </a>
+              </article>
+            </section>
+          </div>
+
+          <!-- card 6 (Sligo) -->
+          <div class="column is-one-third">
+            <section class="card has-background-info has-text-white">
+              <article class="card-content has-text-centered p-3">
+                <a href="/sligo.html">
+                  <p class="has-text-weight-bold">Sligo</p>
+                  <figure class="image is-48x48 mx-auto my-2">
+                    <img src="/images/partly-clouded.png" alt="Windy">
+                  </figure>
+                  <p class="has-text-weight-bold">5°C&nbsp;&nbsp;&nbsp;15°C</p>
+                </a>
+              </article>
+            </section>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <article class="content has-text-centered">
+        <p class="is-flex is-align-items-center is-justify-content-center">
+          <img class="image is-32x32 is-inline" src="/images/logo-footer.png" alt="(Whether)Weather">&nbsp;
+          <img class="image is-32x32 is-inline" src="/images/branding.png" alt="(Whether)Weather">
+          <span>&nbsp;&nbsp;Your.Forecast</span>
+        </p>
+      </article>
+    </div>
+  </footer>
+</body>
+
+</html>
