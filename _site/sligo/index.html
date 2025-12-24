@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  class="has-background-light" lang="en">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,8 +26,8 @@
       });
     });
   </script>
-
 </head>
+
 <body>
   <nav class="navbar is-large">
     <div class="container is-three-quarters">
@@ -46,166 +46,205 @@
     
       <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item has-text-warning has-text-weight-bold">Home</a>
-          <a href="/dashboard.html" class="navbar-item has-text-warning has-text-weight-bold">Dashboard</a>
+          <a href="/" class="navbar-item has-text-warning has-text-weight-bold">Home</a>
+          <a href="/dashboard" class="navbar-item has-text-warning has-text-weight-bold">Dashboard</a>
           <a class="navbar-item has-text-warning has-text-weight-bold">Settings</a>
           <a class="navbar-item has-text-warning has-text-weight-bold">More+</a>
         </div>
       </div>
 
     </div>
-  </nav>
-
+</nav>
   <header class="has-text-centered mb-5">
-    <h1 class="title is-2 mb-1">Sligo</h1>
-    <p class="subtitle is-6">Today</p>
-  </header>
-
+    <h1 class="title is-2 mb-1">Sligo Town</h1>
+    <p class="subtitle is-5">Today</p>
+</header>
   <main class="section">
-    <div class="container is-three-quarters">
-      <section class="table-container">
-        <table class="table is-fullwidth">
-          <thead>
-            <tr>
-              <th></th>
-              <th class="has-text-centered">Right Now</th>
-              <th class="has-text-centered">Max</th>
-              <th class="has-text-centered">Min</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th class="has-background-info has-text-white">Weather</th>
-              <td class="has-text-centered">
-                <figure class="image is-32x32 is-inline-block">
-                  <img src="/images/partly-clouded.png" alt="Sunny">
-                </figure>
-              </td>
-              <td class="has-text-centered">
-                <figure class="image is-32x32 is-inline-block">
-                  <img src="/images/sunny.png" alt="Sunny">
-                </figure>
-              </td>
-              <td class="has-text-centered">
-                <figure class="image is-32x32 is-inline-block">
-                  <img src="/images/windy.png" alt="Sunny">
-                </figure>
-              </td>
-            </tr>
-            <tr>
-              <th class="has-background-info has-text-white">Chance of Precipitation</th>
-              <td class="has-text-centered">20%</td>
-              <td class="has-text-centered">30%</td>
-              <td class="has-text-centered">5%</td>
-            </tr>
-            <tr>
-              <th class="has-background-info has-text-white">Wind</th>
-              <td class="has-text-centered">12 km/h</td>
-              <td class="has-text-centered">15 km/h</td>
-              <td class="has-text-centered">5 km/h</td>
-            </tr>
-            <tr>
-              <th class="has-background-info has-text-white">Temp</th>
-              <td class="has-text-centered has-background-warning">12°C</td>
-              <td class="has-text-centered has-background-warning">15°C</td>
-              <td class="has-text-centered has-background-warning">5°C</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      
+<div class="forecastTable container is-three-quarters">
+  
+  
+  
 
-      <!-- 7-day forecast cards -->
-      <section class="mt-6">
-        <div class="columns is-mobile is-multiline is-centered is-variable is-2">
-          <div class="column is-one-seventh">
-            <section class="card has-background-info has-text-white">
-              <article class="card-content has-text-centered p-3">
-                <p class="has-text-weight-bold">Today</p>
-                <figure class="image is-48x48 mx-auto my-2">
-                  <img src="/images/partly-clouded.png" alt="Sunny">
-                </figure>
-                <p class="has-text-weight-bold">5°C&nbsp;&nbsp;&nbsp;15°C</p>
-              </article>
-            </section>
-          </div>
+  
+  
+  
 
-          <div class="column is-one-seventh">
-            <section class="card has-background-info has-text-white">
-              <article class="card-content has-text-centered p-3">
-                <p class="has-text-weight-bold">Mon</p>
-                <figure class="image is-48x48 mx-auto my-2">
-                  <img src="/images/cloudy.png" alt="Sunny">
-                </figure>
-                <p class="has-text-weight-bold">6°C&nbsp;&nbsp;&nbsp;14°C</p>
-              </article>
-            </section>
-          </div>
+  
+  
+  
 
-          <div class="column is-one-seventh">
-            <section class="card has-background-info has-text-white">
-              <article class="card-content has-text-centered p-3">
-                <p class="has-text-weight-bold">Tue</p>
-                <figure class="image is-48x48 mx-auto my-2">
-                  <img src="/images/rainy.png" alt="Sunny">
-                </figure>
-                <p class="has-text-weight-bold">4°C&nbsp;&nbsp;&nbsp;12°C</p>
-              </article>
-            </section>
-          </div>
+  
+  
+  
 
-          <div class="column is-one-seventh">
-            <section class="card has-background-info has-text-white">
-              <article class="card-content has-text-centered p-3">
-                <p class="has-text-weight-bold">Wed</p>
-                <figure class="image is-48x48 mx-auto my-2">
-                  <img src="/images/windy.png" alt="Sunny">
-                </figure>
-                <p class="has-text-weight-bold">3°C&nbsp;&nbsp;&nbsp;11°C</p>
-              </article>
-            </section>
-          </div>
+  <section class="table-container">
+    <table class="table is-fullwidth">
+        <thead>
+        <tr>
+            <th></th>
+            <th class="has-text-centered">Right Now</th>
+            <th class="has-text-centered">Max</th>
+            <th class="has-text-centered">Min</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th class="has-background-info has-text-white">Weather</th>
+            <td class="has-text-centered">
+            <figure class="image is-32x32 is-inline-block">
+                <img src="/images/sunny.png" alt="Image">
+            </figure>
+            </td>
+            <td class="has-text-centered">
+            <figure class="image is-32x32 is-inline-block">
+                <img src="/images/sunny.png" alt="Image">
+            </figure>
+            </td>
+            <td class="has-text-centered">
+            <figure class="image is-32x32 is-inline-block">
+                <img src="/images/cloudy.png" alt="Image">
+            </figure>
+            </td>
+        </tr>
+        <tr>
+            <th class="has-background-info has-text-white">Chance of Precipitation</th>
+            <td class="has-text-centered"> 0% </td>
+            <td class="has-text-centered"> 2% </td>
+            <td class="has-text-centered"> 0% </td>
+        </tr>
+        <tr>
+            <th class="has-background-info has-text-white">Wind</th>
+            <td class="has-text-centered"> 11 km/h </td>
+            <td class="has-text-centered"> 12 km/h </td>
+            <td class="has-text-centered"> 2 km/h </td>
+        </tr>
+        <tr>
+            <th class="has-background-info has-text-white">Temperature</th>
+            <td class="has-text-centered has-background-warning"> 2°C </td>
+            <td class="has-text-centered has-background-warning"> 4°C </td>
+            <td class="has-text-centered has-background-warning"> 1°C </td>
+        </tr>
+        </tbody>
+    </table>
+</section>
 
-          <div class="column is-one-seventh">
-            <section class="card has-background-danger has-text-white">
-              <article class="card-content has-text-centered p-3">
-                <p class="has-text-weight-bold">Thu</p>
-                <figure class="image is-48x48 mx-auto my-2">
-                  <img src="/images/windy.png" alt="Sunny">
-                </figure>
-                <p class="has-text-weight-bold">0°C&nbsp;&nbsp;&nbsp;10°C</p>
-              </article>
-            </section>
-          </div>
+  <section class="forecastCards mt-6 columns is-multiline is-centered">
+    
+    
+    
+    <div class="column is-one-seventh">
+    <section class="card has-background-info has-text-white">
+        <article class="card-content has-text-centered p-3">
+            <p class="has-text-weight-bold"> Tonight </p>
+            <figure class="image is-48x48 mx-auto my-2">
+                <img src="/images/tonight.png" alt="Image">
+            </figure>
+            <p class="has-text-weight-bold"> 1°C </p>
+        </article>
+    </section>
+</div>
 
-          <div class="column is-one-seventh">
-            <section class="card has-background-danger has-text-white">
-              <article class="card-content has-text-centered p-3">
-                <p class="has-text-weight-bold">Fri</p>
-                <figure class="image is-48x48 mx-auto my-2">
-                  <img src="/images/snow.png" alt="Sunny">
-                </figure>
-                <p class="has-text-weight-bold">-1°C&nbsp;&nbsp;&nbsp;7°C</p>
-              </article>
-            </section>
-          </div>
 
-          <div class="column is-one-seventh">
-            <section class="card has-background-danger has-text-white">
-              <article class="card-content has-text-centered p-3">
-                <p class="has-text-weight-bold">Sat</p>
-                <figure class="image is-48x48 mx-auto my-2">
-                  <img src="/images/snow.png" alt="Sunny">
-                </figure>
-                <p class="has-text-weight-bold">-3°C&nbsp;&nbsp;&nbsp;4°C</p>
-              </article>
-            </section>
-          </div>
-        </div>
-      </section>
-    </div>
+    
+    
+    
+    <div class="column is-one-seventh">
+    <section class="card has-background-info has-text-white">
+        <article class="card-content has-text-centered p-3">
+            <p class="has-text-weight-bold"> Tomorrow </p>
+            <figure class="image is-48x48 mx-auto my-2">
+                <img src="/images/sunny.png" alt="Image">
+            </figure>
+            <p class="has-text-weight-bold"> 5°C | 1°C </p>
+        </article>
+    </section>
+</div>
+
+
+    
+    
+    
+    <div class="column is-one-seventh">
+    <section class="card has-background-info has-text-white">
+        <article class="card-content has-text-centered p-3">
+            <p class="has-text-weight-bold"> Friday </p>
+            <figure class="image is-48x48 mx-auto my-2">
+                <img src="/images/sunny.png" alt="Image">
+            </figure>
+            <p class="has-text-weight-bold"> 5°C | 2°C </p>
+        </article>
+    </section>
+</div>
+
+
+    
+    
+    
+    <div class="column is-one-seventh">
+    <section class="card has-background-info has-text-white">
+        <article class="card-content has-text-centered p-3">
+            <p class="has-text-weight-bold"> Saturday </p>
+            <figure class="image is-48x48 mx-auto my-2">
+                <img src="/images/partly-clouded.png" alt="Image">
+            </figure>
+            <p class="has-text-weight-bold"> 7°C | 4°C </p>
+        </article>
+    </section>
+</div>
+
+
+    
+    
+    
+    <div class="column is-one-seventh">
+    <section class="card has-background-info has-text-white">
+        <article class="card-content has-text-centered p-3">
+            <p class="has-text-weight-bold"> Sunday </p>
+            <figure class="image is-48x48 mx-auto my-2">
+                <img src="/images/partly-clouded.png" alt="Image">
+            </figure>
+            <p class="has-text-weight-bold"> 7°C | 3°C </p>
+        </article>
+    </section>
+</div>
+
+
+    
+    
+    
+    <div class="column is-one-seventh">
+    <section class="card has-background-info has-text-white">
+        <article class="card-content has-text-centered p-3">
+            <p class="has-text-weight-bold"> Monday </p>
+            <figure class="image is-48x48 mx-auto my-2">
+                <img src="/images/cloudy.png" alt="Image">
+            </figure>
+            <p class="has-text-weight-bold"> 5°C | 2°C </p>
+        </article>
+    </section>
+</div>
+
+
+    
+    
+    
+    <div class="column is-one-seventh">
+    <section class="card has-background-info has-text-white">
+        <article class="card-content has-text-centered p-3">
+            <p class="has-text-weight-bold"> Tuesday </p>
+            <figure class="image is-48x48 mx-auto my-2">
+                <img src="/images/sunny.png" alt="Image">
+            </figure>
+            <p class="has-text-weight-bold"> 6°C | 2°C </p>
+        </article>
+    </section>
+</div>
+
+  </section>
+</div>
   </main>
-
-  <footer class="footer">
+  <footer class="footer mt-6">
     <div class="container">
       <article class="content has-text-centered">
         <p class="is-flex is-align-items-center is-justify-content-center">
@@ -215,7 +254,6 @@
         </p>
       </article>
     </div>
-  </footer>
-
+</footer>
 </body>
 </html>

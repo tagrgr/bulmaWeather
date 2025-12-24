@@ -1,17 +1,17 @@
-.navbar .navbar-item img.navbar-logo {
-  max-height: 80px;
-  width: auto;
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
 }
 
 a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
+.navbar .navbar-item img.navbar-logo {
+  max-height: 70px;
+  width: auto;
 }

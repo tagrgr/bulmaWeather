@@ -1,0 +1,47 @@
+---
+layout: layout.njk
+title: Dashboard
+subtitle: Today
+---
+
+<div class="container is-three-quarters">
+  <section class="mt-6">
+    <div class="columns is-multiline is-centered p-6 m-6">
+      {% set page = "/index" %}
+      {% set cityName = "Dublin" %}
+      {% set dashImage = "/images/partly-clouded.png" %}
+      {% set dashWeatherForecast = "8°C | 7°C" %}
+      {% include "forecast-dashboard-component.njk" %}
+
+      {% set page = "/cork" %}
+      {% set cityName = "Cork" %}
+      {% set dashImage = "/images/sunny.png" %}
+      {% set dashWeatherForecast = "6°C | 2°C" %}
+      {% include "forecast-dashboard-component.njk" %}
+
+      {% set page = "/galway" %}
+      {% set cityName = "Galway" %}
+      {% set dashImage = "/images/sunny.png" %}
+      {% set dashWeatherForecast = "5°C | -1°C" %}
+      {% include "forecast-dashboard-component.njk" %}
+
+      {% set page = "/bundoran" %}
+      {% set cityName = "Bundoran" %}
+      {% set dashImage = "/images/sunny.png" %}
+      {% set dashWeatherForecast = "4°C | 2°C" %}
+      {% include "forecast-dashboard-component.njk" %}
+
+      {% set page = "/waterford" %}
+      {% set cityName = "Waterford" %}
+      {% set dashImage = "/images/sunny.png" %}
+      {% set dashWeatherForecast = "6°C | 2°C" %}
+      {% include "forecast-dashboard-component.njk" %}
+
+      {% set page = "/sligo" %}
+      {% set cityName = "Sligo" %}
+      {% set dashImage = "/images/sunny.png" %}
+      {% set dashWeatherForecast = "4°C | 1°C" %}
+      {% include "forecast-dashboard-component.njk" %}
+    </div>
+  </section>
+</div>

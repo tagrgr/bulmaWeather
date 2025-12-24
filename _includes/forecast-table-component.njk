@@ -1,0 +1,50 @@
+<section class="table-container">
+    <table class="table is-fullwidth">
+        <thead>
+        <tr>
+            <th></th>
+            <th class="has-text-centered">Right Now</th>
+            <th class="has-text-centered">Max</th>
+            <th class="has-text-centered">Min</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th class="has-background-info has-text-white">Weather</th>
+            <td class="has-text-centered">
+            <figure class="image is-32x32 is-inline-block">
+                <img src="{{rightNowImage}}" alt="Image">
+            </figure>
+            </td>
+            <td class="has-text-centered">
+            <figure class="image is-32x32 is-inline-block">
+                <img src="{{maxImage}}" alt="Image">
+            </figure>
+            </td>
+            <td class="has-text-centered">
+            <figure class="image is-32x32 is-inline-block">
+                <img src="{{minImage}}" alt="Image">
+            </figure>
+            </td>
+        </tr>
+        <tr>
+            <th class="has-background-info has-text-white">Chance of Precipitation</th>
+            <td class="has-text-centered"> {{rightNowPrecipitation}} </td>
+            <td class="has-text-centered"> {{maxPrecipitation}} </td>
+            <td class="has-text-centered"> {{minPrecipitation}} </td>
+        </tr>
+        <tr>
+            <th class="has-background-info has-text-white">Wind</th>
+            <td class="has-text-centered"> {{rightNowWind}} </td>
+            <td class="has-text-centered"> {{maxWind}} </td>
+            <td class="has-text-centered"> {{minWind}} </td>
+        </tr>
+        <tr>
+            <th class="has-background-info has-text-white">Temperature</th>
+            <td class="has-text-centered has-background-warning"> {{rightNowTempo}} </td>
+            <td class="has-text-centered has-background-warning"> {{maxTempo}} </td>
+            <td class="has-text-centered has-background-warning"> {{minTempo}} </td>
+        </tr>
+        </tbody>
+    </table>
+</section>

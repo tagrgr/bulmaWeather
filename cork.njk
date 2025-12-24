@@ -1,0 +1,62 @@
+---
+layout: layout.njk
+title: Cork City
+subtitle: Today
+---
+
+<div class="forecastTable container is-three-quarters">
+  {% set rightNowImage = "/images/sunny.png" %}
+  {% set maxImage = "/images/sunny.png" %}
+  {% set minImage = "/images/partly-clouded.png" %}
+
+  {% set rightNowPrecipitation = "0%" %}
+  {% set maxPrecipitation = "0%" %}
+  {% set minPrecipitation = "0%" %}
+
+  {% set rightNowWind = "18 km/h" %}
+  {% set maxWind = "21 km/h" %}
+  {% set minWind = "12 km/h" %}
+
+  {% set rightNowTempo = "5°C" %}
+  {% set maxTempo = "6°C" %}
+  {% set minTempo = "2°C" %}
+
+  {% include "forecast-table-component.njk" %}
+
+  <section class="forecastCards mt-6 columns is-multiline is-centered">
+    {% set forecastWeeklyDay = "Tonight" %}
+    {% set forecastImage = "/images/tonight.png" %}
+    {% set forecastDescription = "3°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Tomorrow" %}
+    {% set forecastImage = "/images/sunny.png" %}
+    {% set forecastDescription = "6°C | 2°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Friday" %}
+    {% set forecastImage = "/images/sunny.png" %}
+    {% set forecastDescription = "7°C | 4°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Saturday" %}
+    {% set forecastImage = "/images/sunny.png" %}
+    {% set forecastDescription = "8°C | 7°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Sunday" %}
+    {% set forecastImage = "/images/cloudy.png" %}
+    {% set forecastDescription = "8°C | 3°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Monday" %}
+    {% set forecastImage = "/images/windy.png" %}
+    {% set forecastDescription = "6°C | 1°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Tuesday" %}
+    {% set forecastImage = "/images/cloudy.png" %}
+    {% set forecastDescription = "4°C | 4°C" %}
+    {% include "forecast-card-component.njk" %}
+  </section>
+</div>

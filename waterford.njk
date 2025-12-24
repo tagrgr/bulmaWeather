@@ -1,0 +1,62 @@
+---
+layout: layout.njk
+title: Waterford City
+subtitle: Today
+---
+
+<div class="forecastTable container is-three-quarters">
+  {% set rightNowImage = "/images/sunny.png" %}
+  {% set maxImage = "/images/sunny.png" %}
+  {% set minImage = "/images/sunny.png" %}
+
+  {% set rightNowPrecipitation = "0%" %}
+  {% set maxPrecipitation = "0%" %}
+  {% set minPrecipitation = "0%" %}
+
+  {% set rightNowWind = "14 km/h" %}
+  {% set maxWind = "26 km/h" %}
+  {% set minWind = "10 km/h" %}
+
+  {% set rightNowTempo = "5°C" %}
+  {% set maxTempo = "6°C" %}
+  {% set minTempo = "2°C" %}
+
+  {% include "forecast-table-component.njk" %}
+
+  <section class="forecastCards mt-6 columns is-multiline is-centered">
+    {% set forecastWeeklyDay = "Tonight" %}
+    {% set forecastImage = "/images/tonight.png" %}
+    {% set forecastDescription = "2°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Tomorrow" %}
+    {% set forecastImage = "/images/sunny.png" %}
+    {% set forecastDescription = "7°C | 2°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Friday" %}
+    {% set forecastImage = "/images/sunny.png" %}
+    {% set forecastDescription = "7°C | 5°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Saturday" %}
+    {% set forecastImage = "/images/partly-clouded.png" %}
+    {% set forecastDescription = "8°C | 7°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Sunday" %}
+    {% set forecastImage = "/images/windy.png" %}
+    {% set forecastDescription = "8°C | 5°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Monday" %}
+    {% set forecastImage = "/images/cloudy.png" %}
+    {% set forecastDescription = "6°C | 3°C" %}
+    {% include "forecast-card-component.njk" %}
+
+    {% set forecastWeeklyDay = "Tuesday" %}
+    {% set forecastImage = "/images/cloudy.png" %}
+    {% set forecastDescription = "5°C | 4°C" %}
+    {% include "forecast-card-component.njk" %}
+  </section>
+</div>
