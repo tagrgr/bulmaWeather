@@ -1,0 +1,91 @@
+---
+layout: layout.njk
+title: User Settings
+---
+
+<div class="columns is-6 is-centered">
+  <!-- Favourite Cities -->
+  <div class="column is-3">
+    <h2 class="subtitle has-text-centered has-text-weight-bold">Favourite Cities</h2>
+    <div class="settings-panel">
+      {% set favCity = "fav-dublin" %}
+      {% set cityName = "Dublin" %}
+      {% set isChecked = true %}
+      {% include "forecast-fav-cities-component.njk" %}
+
+      {% set favCity = "fav-limerick" %}
+      {% set cityName = "Limerick" %}
+      {% set isChecked = false %}
+      {% include "forecast-fav-cities-component.njk" %}
+
+      {% set favCity = "fav-cork" %}
+      {% set cityName = "Cork" %}
+      {% set isChecked = true %}
+      {% include "forecast-fav-cities-component.njk" %}
+
+      {% set favCity = "fav-galway" %}
+      {% set cityName = "Galway" %}
+      {% include "forecast-fav-cities-component.njk" %}
+
+      {% set favCity = "fav-bundoran" %}
+      {% set cityName = "Bundoran" %}
+      {% include "forecast-fav-cities-component.njk" %}
+
+      {% set favCity = "fav-waterford" %}
+      {% set cityName = "Waterford" %}
+      {% include "forecast-fav-cities-component.njk" %}
+
+      {% set favCity = "fav-sligo" %}
+      {% set cityName = "Sligo" %}
+      {% include "forecast-fav-cities-component.njk" %}
+
+      {% set favCity = "fav-portlaoise" %}
+      {% set cityName = "Portlaoise" %}
+      {% set isChecked = false %}
+      {% include "forecast-fav-cities-component.njk" %}
+    </div>
+  </div>
+
+  <!-- Settings -->
+  <div class="column is-3">
+    <h2 class="subtitle has-text-centered has-text-weight-bold">Settings</h2>
+    <div class="settings-panel">
+      {% set settingTitle = "unit-celsius" %}
+      {% set titleName = "Celsius" %}
+      {% set isChecked = true %}
+      {% include "forecast-settings-component.njk" %}
+
+      {% set settingTitle = "unit-fahrenheit" %}
+      {% set titleName = "Fahrenheit" %}
+      {% set isChecked = false %}
+      {% include "forecast-settings-component.njk" %}
+
+      {% set settingTitle = "setting-1" %}
+      {% set titleName = "Right Now Table" %}
+      {% set isChecked = true %}
+      {% include "forecast-settings-component.njk" %}
+
+      {% set settingTitle = "setting-2" %}
+      {% set titleName = "Forecast Cards" %}
+      {% include "forecast-settings-component.njk" %}
+      
+      {% set settingTitle = "setting-3" %}
+      {% set titleName = "Headers hidden" %}
+      {% set isChecked = false %}
+      {% include "forecast-settings-component.njk" %}
+
+      {% set settingTitle = "setting-4" %}
+      {% set titleName = "Navbar hidden" %}
+      {% include "forecast-settings-component.njk" %}    
+    
+      {% set settingTitle = "setting-5" %}
+      {% set titleName = "Health & Sunlight" %}
+      {% set isChecked = true %}
+      {% include "forecast-settings-component.njk" %}
+
+      {% set settingTitle = "setting-6" %}
+      {% set titleName = "Health & Sunlight / Bee Pollen Levels" %}
+      {% include "forecast-settings-component.njk" %}
+    </div>
+  </div>
+</div>

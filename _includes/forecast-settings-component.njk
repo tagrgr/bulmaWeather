@@ -1,0 +1,11 @@
+<div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="{{settingTitle}}" 
+            {% if isChecked %}checked{% endif %}
+        >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">{{titleName}}</span>
+</div>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whether Weather</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <nav class="navbar is-large has-shadow">
+    <div class="container is-three-quarters">
+
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img class="navbar-logo" src="/images/logo.png" alt="Logo" />
+        </a>
+      
+        <span class="navbar-burger" data-target="navbarMenu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </span>
+      </div>
+    
+      <div id="navbarMenu" class="navbar-menu"><!-- is-active?  -->
+        <div class="navbar-end">
+          <a href="/" class="navbar-item has-text-dark">Home</a>
+          <a href="/dashboard" class="navbar-item has-text-dark">Dashboard</a>
+          <a href="/impress" class="navbar-item has-text-dark">Health & Sunlight</a>
+          <a href="/settings" class="navbar-item has-text-dark">Settings</a>
+        </div>
+      </div>
+
+    </div>
+</nav>
+  <header class="has-text-centered mt-6">
+    <h1 class="title is-2 mb-1">Health &amp; Sunlight</h1>
+    <p class="subtitle is-5">Today</p>
+</header>
+  <main class="section">
+      
+<div class="container"> 
+    <section class="section">
+    
+    <h1 class="title">Dublin</h1>
+<h2 class="subtitle">Further weather-related information</h2>
+    <div class="columns">
+        <!-- AQI card -->
+        
+        
+        
+        
+        <div class="column">
+        <section class="card has-background-dark has-text-light">
+            <article class="card-content">
+            <p class="title is-4 has-text-white">Air Quality Index (AQI)</p>
+            <p class="title is-2 has-text-white">45</p>
+            <p class="subtitle is-6 has-text-white">Good</p>
+            <p class="content">
+                Air quality is considered satisfactory, and air pollution poses little or no risk for most people.
+            </p>
+            <p class="content is-size-7">
+                Tip: Take a short walk outdoors around midday to make the most of limited daylight and briefly ventilate indoor spaces when temperatures are highest since air quality is good.
+            </p>
+            </article>
+        </section>
+        </div>
+        
+        <!-- Bee pollen card -->
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-warning-light">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Bee Pollen Levels</p>
+            <p class="title is-2 has-text-dark">Low</p>
+            <p class="content">
+                Pollen levels are low today. Most people, including those with hay fever or allergies, are unlikely to experience symptoms outdoors.
+            </p>
+            <p class="content is-size-7">
+                Tip: Enjoy outdoor activities with minimal allergy risk, keep windows open for fresh air if comfortable, and take advantage of the low pollen levels for exercise or time outside.
+            </p>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Sunrise / Sunset / Daylight card -->
+        
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-info-light has-text-dark">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Sunrise &amp; Sunset</p>
+            <p class="title is-2 has-text-dark">Daylight: 7:31</p>
+            <p class="content">
+                <strong class="has-text-dark">Sunrise:</strong> 08:39<br>
+                <strong class="has-text-dark">Sunset:</strong> 16:10<br>
+            </p>
+            <p class="content is-size-7">
+                Short daylight and cold conditions limit outdoor time today. Try to get outside around midday when light levels are highest, dress warmly, and take advantage of the low pollen levels for a brief walk or fresh air without allergy concerns.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section">
+    
+    <h1 class="title">Cork</h1>
+<h2 class="subtitle">Further weather-related information</h2>
+    <div class="columns">
+        <!-- AQI card -->
+        
+        
+        
+        
+        <div class="column">
+        <section class="card has-background-dark has-text-light">
+            <article class="card-content">
+            <p class="title is-4 has-text-white">Air Quality Index (AQI)</p>
+            <p class="title is-2 has-text-white">61</p>
+            <p class="subtitle is-6 has-text-white">Moderate</p>
+            <p class="content">
+                Most people can continue usual outdoor activities, but individuals who are sensitive to air pollution may experience mild discomfort.
+            </p>
+            <p class="content is-size-7">
+                Tip: consider reducing prolonged or intense outdoor exercise if you are sensitive to air pollution.
+            </p>
+            </article>
+        </section>
+        </div>
+        
+        <!-- Bee pollen card -->
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-warning-light">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Bee Pollen Levels</p>
+            <p class="title is-2 has-text-dark">Low</p>
+            <p class="content">
+                Pollen levels are low today. Most people, including those with hay fever or allergies, are unlikely to experience symptoms outdoors.
+            </p>
+            <p class="content is-size-7">
+                Tip: Enjoy outdoor activities with minimal allergy risk, keep windows open for fresh air if comfortable, and take advantage of the low pollen levels for exercise or time outside.
+            </p>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Sunrise / Sunset / Daylight card -->
+        
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-info-light has-text-dark">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Sunrise &amp; Sunset</p>
+            <p class="title is-2 has-text-dark">Daylight: 7:47</p>
+            <p class="content">
+                <strong class="has-text-dark">Sunrise:</strong> 08:40<br>
+                <strong class="has-text-dark">Sunset:</strong> 16:27<br>
+            </p>
+            <p class="content is-size-7">
+                Short daylight and cold conditions limit outdoor time today. Try to get outside around midday when light levels are highest, dress warmly, and take advantage of the low pollen levels for a brief walk or fresh air without allergy concerns.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section">
+    
+    <h1 class="title">Galway</h1>
+<h2 class="subtitle">Further weather-related information</h2>
+    <div class="columns">
+        <!-- AQI card -->
+        
+        
+        
+        
+        <div class="column">
+        <section class="card has-background-dark has-text-light">
+            <article class="card-content">
+            <p class="title is-4 has-text-white">Air Quality Index (AQI)</p>
+            <p class="title is-2 has-text-white">33</p>
+            <p class="subtitle is-6 has-text-white">Good</p>
+            <p class="content">
+                Air quality is considered satisfactory, and air pollution poses little or no risk for most people.
+            </p>
+            <p class="content is-size-7">
+                Tip: Take a short walk outdoors around midday to make the most of limited daylight and briefly ventilate indoor spaces when temperatures are highest since air quality is good.
+            </p>
+            </article>
+        </section>
+        </div>
+        
+        <!-- Bee pollen card -->
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-warning-light">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Bee Pollen Levels</p>
+            <p class="title is-2 has-text-dark">Low</p>
+            <p class="content">
+                Pollen levels are low today. Most people, including those with hay fever or allergies, are unlikely to experience symptoms outdoors.
+            </p>
+            <p class="content is-size-7">
+                Tip: Enjoy outdoor activities with minimal allergy risk, keep windows open for fresh air if comfortable, and take advantage of the low pollen levels for exercise or time outside.
+            </p>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Sunrise / Sunset / Daylight card -->
+        
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-info-light has-text-dark">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Sunrise &amp; Sunset</p>
+            <p class="title is-2 has-text-dark">Daylight: 7:32</p>
+            <p class="content">
+                <strong class="has-text-dark">Sunrise:</strong> 08:50<br>
+                <strong class="has-text-dark">Sunset:</strong> 16:22<br>
+            </p>
+            <p class="content is-size-7">
+                Short daylight and cold conditions limit outdoor time today. Try to get outside around midday when light levels are highest, dress warmly, and take advantage of the low pollen levels for a brief walk or fresh air without allergy concerns.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section">
+    
+    <h1 class="title">Bundoran</h1>
+<h2 class="subtitle">Further weather-related information</h2>
+    <div class="columns">
+        <!-- AQI card -->
+        
+        
+        
+        
+        <div class="column">
+        <section class="card has-background-dark has-text-light">
+            <article class="card-content">
+            <p class="title is-4 has-text-white">Air Quality Index (AQI)</p>
+            <p class="title is-2 has-text-white">67</p>
+            <p class="subtitle is-6 has-text-white">Moderate</p>
+            <p class="content">
+                Most people can continue usual outdoor activities, but individuals who are sensitive to air pollution may experience mild discomfort.
+            </p>
+            <p class="content is-size-7">
+                Tip: consider reducing prolonged or intense outdoor exercise if you are sensitive to air pollution.
+            </p>
+            </article>
+        </section>
+        </div>
+        
+        <!-- Bee pollen card -->
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-warning-light">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Bee Pollen Levels</p>
+            <p class="title is-2 has-text-dark">Low</p>
+            <p class="content">
+                Pollen levels are low today. Most people, including those with hay fever or allergies, are unlikely to experience symptoms outdoors.
+            </p>
+            <p class="content is-size-7">
+                Tip: Enjoy outdoor activities with minimal allergy risk, keep windows open for fresh air if comfortable, and take advantage of the low pollen levels for exercise or time outside.
+            </p>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Sunrise / Sunset / Daylight card -->
+        
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-info-light has-text-dark">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Sunrise &amp; Sunset</p>
+            <p class="title is-2 has-text-dark">Daylight: 7:18</p>
+            <p class="content">
+                <strong class="has-text-dark">Sunrise:</strong> 08:54<br>
+                <strong class="has-text-dark">Sunset:</strong> 16:12<br>
+            </p>
+            <p class="content is-size-7">
+                Short daylight and cold conditions limit outdoor time today. Try to get outside around midday when light levels are highest, dress warmly, and take advantage of the low pollen levels for a brief walk or fresh air without allergy concerns.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section">
+    
+    <h1 class="title">Waterford</h1>
+<h2 class="subtitle">Further weather-related information</h2>
+    <div class="columns">
+        <!-- AQI card -->
+        
+        
+        
+        
+        <div class="column">
+        <section class="card has-background-dark has-text-light">
+            <article class="card-content">
+            <p class="title is-4 has-text-white">Air Quality Index (AQI)</p>
+            <p class="title is-2 has-text-white">50</p>
+            <p class="subtitle is-6 has-text-white">Good</p>
+            <p class="content">
+                Air quality is considered satisfactory, and air pollution poses little or no risk for most people.
+            </p>
+            <p class="content is-size-7">
+                Tip: Take a short walk outdoors around midday to make the most of limited daylight and briefly ventilate indoor spaces when temperatures are highest since air quality is good.
+            </p>
+            </article>
+        </section>
+        </div>
+        
+        <!-- Bee pollen card -->
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-warning-light">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Bee Pollen Levels</p>
+            <p class="title is-2 has-text-dark">Low</p>
+            <p class="content">
+                Pollen levels are low today. Most people, including those with hay fever or allergies, are unlikely to experience symptoms outdoors.
+            </p>
+            <p class="content is-size-7">
+                Tip: Enjoy outdoor activities with minimal allergy risk, keep windows open for fresh air if comfortable, and take advantage of the low pollen levels for exercise or time outside.
+            </p>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Sunrise / Sunset / Daylight card -->
+        
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-info-light has-text-dark">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Sunrise &amp; Sunset</p>
+            <p class="title is-2 has-text-dark">Daylight: 7:43</p>
+            <p class="content">
+                <strong class="has-text-dark">Sunrise:</strong> 08:37<br>
+                <strong class="has-text-dark">Sunset:</strong> 16:20<br>
+            </p>
+            <p class="content is-size-7">
+                Short daylight and cold conditions limit outdoor time today. Try to get outside around midday when light levels are highest, dress warmly, and take advantage of the low pollen levels for a brief walk or fresh air without allergy concerns.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section">
+    
+    <h1 class="title">Sligo</h1>
+<h2 class="subtitle">Further weather-related information</h2>
+    <div class="columns">
+        <!-- AQI card -->
+        
+        
+        
+        
+        <div class="column">
+        <section class="card has-background-dark has-text-light">
+            <article class="card-content">
+            <p class="title is-4 has-text-white">Air Quality Index (AQI)</p>
+            <p class="title is-2 has-text-white">56</p>
+            <p class="subtitle is-6 has-text-white">Moderate</p>
+            <p class="content">
+                Most people can continue usual outdoor activities, but individuals who are sensitive to air pollution may experience mild discomfort.
+            </p>
+            <p class="content is-size-7">
+                Tip: consider reducing prolonged or intense outdoor exercise if you are sensitive to air pollution.
+            </p>
+            </article>
+        </section>
+        </div>
+        
+        <!-- Bee pollen card -->
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-warning-light">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Bee Pollen Levels</p>
+            <p class="title is-2 has-text-dark">Low</p>
+            <p class="content">
+                Pollen levels are low today. Most people, including those with hay fever or allergies, are unlikely to experience symptoms outdoors.
+            </p>
+            <p class="content is-size-7">
+                Tip: Enjoy outdoor activities with minimal allergy risk, keep windows open for fresh air if comfortable, and take advantage of the low pollen levels for exercise or time outside.
+            </p>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Sunrise / Sunset / Daylight card -->
+        
+        
+        
+        
+        <div class="column">
+        <div class="card has-background-info-light has-text-dark">
+            <div class="card-content">
+            <p class="title is-4 has-text-dark">Sunrise &amp; Sunset</p>
+            <p class="title is-2 has-text-dark">Daylight: 7:20</p>
+            <p class="content">
+                <strong class="has-text-dark">Sunrise:</strong> 08:54<br>
+                <strong class="has-text-dark">Sunset:</strong> 16:14<br>
+            </p>
+            <p class="content is-size-7">
+                Short daylight and cold conditions limit outdoor time today. Try to get outside around midday when light levels are highest, dress warmly, and take advantage of the low pollen levels for a brief walk or fresh air without allergy concerns.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+</div>
+  </main>
+  <footer class="footer mt-4 has-background-dark has-text-grey-light">
+    <div class="container">
+      <article class="content has-text-centered">
+        <p class="is-flex is-align-items-center is-justify-content-center">
+          <img class="image is-32x32 is-inline" src="/images/logo-footer.png" alt="(Whether)Weather">&nbsp;
+          <img class="image is-32x32 is-inline" src="/images/branding.png" alt="(Whether)Weather">
+          <strong class="has-text-warning">&nbsp;&nbsp;whether Weather</strong>&nbsp;- Your.Forecast demo built with HTML, CSS, Bulma & Eleventy.
+        </p>
+      </article>
+    </div>
+</footer>
+</body>
+</html>

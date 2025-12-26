@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whether Weather</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <nav class="navbar is-large has-shadow">
+    <div class="container is-three-quarters">
+
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img class="navbar-logo" src="/images/logo.png" alt="Logo" />
+        </a>
+      
+        <span class="navbar-burger" data-target="navbarMenu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </span>
+      </div>
+    
+      <div id="navbarMenu" class="navbar-menu"><!-- is-active?  -->
+        <div class="navbar-end">
+          <a href="/" class="navbar-item has-text-dark">Home</a>
+          <a href="/dashboard" class="navbar-item has-text-dark">Dashboard</a>
+          <a href="/impress" class="navbar-item has-text-dark">Health & Sunlight</a>
+          <a href="/settings" class="navbar-item has-text-dark">Settings</a>
+        </div>
+      </div>
+
+    </div>
+</nav>
+  <header class="has-text-centered mt-6">
+    <h1 class="title is-2 mb-1">User Settings</h1>
+    <p class="subtitle is-5"></p>
+</header>
+  <main class="section">
+      
+<div class="columns is-6 is-centered">
+  <!-- Favourite Cities -->
+  <div class="column is-3">
+    <h2 class="subtitle has-text-centered has-text-weight-bold">Favourite Cities</h2>
+    <div class="settings-panel">
+      
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="fav-dublin" 
+            checked
+            >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Dublin</span>
+</div>
+
+      
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="fav-limerick" 
+            
+            >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Limerick</span>
+</div>
+
+      
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="fav-cork" 
+            checked
+            >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Cork</span>
+</div>
+
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="fav-galway" 
+            checked
+            >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Galway</span>
+</div>
+
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="fav-bundoran" 
+            checked
+            >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Bundoran</span>
+</div>
+
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="fav-waterford" 
+            checked
+            >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Waterford</span>
+</div>
+
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="fav-sligo" 
+            checked
+            >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Sligo</span>
+</div>
+
+      
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="fav-portlaoise" 
+            
+            >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Portlaoise</span>
+</div>
+    </div>
+  </div>
+
+  <!-- Settings -->
+  <div class="column is-3">
+    <h2 class="subtitle has-text-centered has-text-weight-bold">Settings</h2>
+    <div class="settings-panel">
+      
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="unit-celsius" 
+            checked
+        >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Celsius</span>
+</div>
+
+      
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="unit-fahrenheit" 
+            
+        >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Fahrenheit</span>
+</div>
+
+      
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="setting-1" 
+            checked
+        >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Right Now Table</span>
+</div>
+
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="setting-2" 
+            checked
+        >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Forecast Cards</span>
+</div>
+      
+      
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="setting-3" 
+            
+        >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Headers hidden</span>
+</div>
+
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="setting-4" 
+            
+        >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Navbar hidden</span>
+</div>    
+    
+      
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="setting-5" 
+            checked
+        >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Health &amp; Sunlight</span>
+</div>
+
+      
+      
+      <div class="toggle-row">
+    <label class="toggle">
+        <input 
+            type="checkbox" 
+            id="setting-6" 
+            checked
+        >
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Health &amp; Sunlight / Bee Pollen Levels</span>
+</div>
+    </div>
+  </div>
+</div>
+  </main>
+  <footer class="footer mt-4 has-background-dark has-text-grey-light">
+    <div class="container">
+      <article class="content has-text-centered">
+        <p class="is-flex is-align-items-center is-justify-content-center">
+          <img class="image is-32x32 is-inline" src="/images/logo-footer.png" alt="(Whether)Weather">&nbsp;
+          <img class="image is-32x32 is-inline" src="/images/branding.png" alt="(Whether)Weather">
+          <strong class="has-text-warning">&nbsp;&nbsp;whether Weather</strong>&nbsp;- Your.Forecast demo built with HTML, CSS, Bulma & Eleventy.
+        </p>
+      </article>
+    </div>
+</footer>
+</body>
+</html>
