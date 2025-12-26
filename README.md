@@ -55,6 +55,7 @@ Then open: [http://localhost:8080](http://localhost:8080) to see your site.
 
 ## Project Structure
 
+```text
 .
 ├── _includes/        # Layouts and reusable partials (nav, header, footer, components, layout, impress, etc.)
 ├── _site/            # Generated output (do not edit manually)
@@ -64,6 +65,7 @@ Then open: [http://localhost:8080](http://localhost:8080) to see your site.
 ├── *.njk             # Pages and templates
 ├── package.json
 └── README.md
+```
 
 ## Technologies
 
