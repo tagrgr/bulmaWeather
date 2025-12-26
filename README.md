@@ -57,13 +57,14 @@ Then open: [http://localhost:8080](http://localhost:8080) to see your site.
 
 ```text
 .
-├── _includes/        # Layouts and reusable partials (nav, header, footer, components, layout, impress, etc.)
+├── _includes/        # Layouts and reusable partials
 ├── _site/            # Generated output (do not edit manually)
-├── css/              # UX that we couldn't accomplish by Bulma.
+├── css/              # Custom CSS that extends Bulma
 ├── images/           # Static assets
 ├── .eleventy.js      # eleventy config 
 ├── *.njk             # Pages and templates
 ├── package.json
+├── package-lock.json
 └── README.md
 ```
 
@@ -75,5 +76,7 @@ Then open: [http://localhost:8080](http://localhost:8080) to see your site.
 * [Nunjucks templates](https://mozilla.github.io/nunjucks/)
 * [Netlify with Git-based continuous deployment](https://www.netlify.com/)
 
-# https://bulmaweather.netlify.app/
-**Live Site (Netlify)**  
+## Live Site
+
+**Netlify Deployment:** 
+https://bulmaweather.netlify.app/
