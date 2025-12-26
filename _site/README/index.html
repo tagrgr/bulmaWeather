@@ -1,16 +1,56 @@
 <h1>weatherWeather</h1>
-<p>A web client for our weather forecast service.</p>
+<p>A responsive weather forecast web client built using <strong>Eleventy (11ty)</strong> and <strong>Bulma CSS</strong>.<br>
+The project focuses on clean layout structure, reusable templates, and mobile-first design.</p>
+<hr>
+<h2>Project Overview</h2>
+<p>This application displays weather-related information using a static-site approach powered by Eleventy.<br>
+It is designed for clarity, responsiveness, and ease of maintenance, using Bulma for layout and styling.</p>
+<p>Key features include:</p>
+<ul>
+<li>Reusable layouts and partials</li>
+<li>Responsive grid and card layouts</li>
+<li>City-based pages</li>
+<li>Clean navigation structure</li>
+<li>Static-site generation with Eleventy</li>
+</ul>
+<hr>
 <h2>Getting Started</h2>
+<h3>Prerequisites</h3>
+<ul>
+<li><strong>Node.js</strong> (LTS recommended)</li>
+<li><strong>npm</strong></li>
+</ul>
+<p>Verify installation:</p>
+<pre><code class="language-bash">node -v
+npm -v
+</code></pre>
+<h3>Install Dependencies</h3>
+<pre><code class="language-bash">npm install
+</code></pre>
 <h3>Install Eleventy</h3>
 <pre><code class="language-bash">npm install -g @11ty/eleventy
 </code></pre>
-<h3>Run Eleventy</h3>
+<h3>Run the project by Eleventy locally</h3>
 <pre><code class="language-bash">eleventy --serve
 </code></pre>
-<p>Now navigate to <a href="http://localhost:8080">http://localhost:8080</a> to see your site.</p>
-<p>Hot reloading is enabled, so any changes you make to your files will be reflected in the browser.</p>
+<p>Then open: <a href="http://localhost:8080">http://localhost:8080</a> to see your site.</p>
+<h2>Project Structure</h2>
+<p>.
+├── _includes/        # Layouts and reusable partials (nav, header, footer, components, layout, impress, etc.)
+├── _site/            # Generated output (do not edit manually)
+├── css/              # UX that we couldn't accomplish by Bulma.
+├── images/           # Static assets
+├── .eleventy.js      # eleventy config
+├── *.njk             # Pages and templates
+├── package.json
+└── README.md</p>
 <h2>Technologies</h2>
 <ul>
-<li><a href="https://www.11ty.dev/">Eleventy</a></li>
+<li><a href="https://www.11ty.dev/">Eleventy (11ty)</a></li>
 <li><a href="https://bulma.io/">Bulma</a></li>
+<li>[HTML / CSS]</li>
+<li><a href="https://mozilla.github.io/nunjucks/">Nunjucks templates</a></li>
+<li><a href="https://www.netlify.com/">Netlify with Git-based continuous deployment</a></li>
 </ul>
+<h1>https://bulmaweather.netlify.app/</h1>
+<p><strong>Live Site (Netlify)</strong></p>
